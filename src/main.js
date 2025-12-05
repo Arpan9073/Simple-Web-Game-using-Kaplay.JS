@@ -41,7 +41,7 @@ k.scene("game", () => {
     counter++;
 
     const speeds = [250, 300, 230, 280];
-    const currSpeed = speeds[Math.floor(Math.random() * (speeds.length))];
+    const currSpeed = speeds[Math.floor(Math.random() * speeds.length)];
 
     const box = k.add([
       k.rect(50, 50),
@@ -50,7 +50,7 @@ k.scene("game", () => {
       k.body(),
       k.area(),
       "boxes",
-      move(180, currSpeed)
+      move(180, currSpeed),
     ]);
   });
 
@@ -72,6 +72,6 @@ k.scene("game", () => {
 });
 
 k.onKeyPress("enter", () => {
-    startext.destroy();
-    k.go("game");
-  });
+  startext.destroy();
+  k.go("game");
+});
