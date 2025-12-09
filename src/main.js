@@ -30,7 +30,7 @@ k.scene("game", () => {
   ]);
 
   player.onKeyPress("space", () => {
-    if (player.isGrounded()) player.jump(500);
+    if (player.isGrounded()) player.jump(450);
   });
 
   let counter = 0;
