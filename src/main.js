@@ -14,6 +14,7 @@ k.scene("game", () => {
   k.setGravity(1000);
 
   const player = k.add([
+    // todo: have to change the player icon
     k.sprite("bean"),
     k.area(),
     k.pos(45, 45),
